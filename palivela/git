@@ -1,0 +1,123 @@
+Git commands
+============
+
+git init
+
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+
+git config --list
+
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "label" file1
+git status
+git log
+git show cid
+
+-------------------------------------------
+touch file2 file3 file4
+ls
+git status
+git add file2 file3 file4
+or
+git add .
+or
+git add *
+or 
+git add -A
+git commit -m "label"
+git log
+---------------------------------------------------
+git commit -am "label" file-name (only for modified files)
+
+git reset --soft cid (local to staging)
+git reset HEAD file (staging to workspace)
+git reset --mixed cid (local to workspace)
+git reset --hard cid ( to delete files and logs)
+--------------------------------------------
+git clone path/of/c-repo
+
+git clone https://github.com/narasimhasreeram/repo1.git
+ls
+cd repo1
+touch prasad
+git status
+git add .
+git commit -m "label"
+git push
+
+
+mkdir prasad-dir
+ls
+cd prasad-dir
+touch a1 a2 a3
+cd ..
+git add .
+git commit -m "label"
+git push
+
+====================
+git clone https://github.com/polarapu/batch-51.git
+ls
+cd batch-51
+touch prasad
+git status
+git add prasad
+git status
+git commit -m "sample commit from prasad"
+git push
+git pull --rebase
+git push
+
+mkdir prasad-dir
+cd prasad-dir
+touch a1 a2 a3
+cd ..
+git add .
+git commit -m "label"
+git push
+git pull --rebase
+git push
+
+
+
+cd prasad-dir
+rm -rf f1 f2
+cd ..
+git status
+add, commit
+git push
+
+========================
+git log
+git log -n
+git log --oneline
+git log --oneline -5
+git log --author=prasad
+git log --author=prasad -4
+git log --author=prasad --oneline
+git log --author=prasad --oneline -4
+
+git log --since=2018-02-07
+or
+git log --after=2018-02-07
+
+git log --until=2020-01-13
+or
+git log --before=2020-01-16
+
+git log --after="2020-01-27" --before="2020-01-28"
+or
+git log --since=2020-01-26 --until=2020-01-18
+
+git log --after="2020-01-27 08:30" --before="2020-01-27 23:00"
+
+git log --grep="msg"
+
+git log -- file-name
+
+
