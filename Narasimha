@@ -1,0 +1,16 @@
+git branch
+git checkout release1
+git branch
+
+git checkout -b branch-name
+
+
+git merge branch-name (all data)
+git cherry-pick cid  (only for single commit's)
+git branch -d branch-name
+
+
+git push origin branch-name  (local to central)
+or
+git push path/of/c-repo branch-name
+
