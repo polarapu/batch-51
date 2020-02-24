@@ -1,4 +1,4 @@
-echo @off
+@echo off
 echo "hello devops"
 set a=%1
 set b=%2
