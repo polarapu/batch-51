@@ -1,3 +1,4 @@
+setlocal DisableDelayedExpansion
 echo "hello devops"
 set a=%1
 set /p b=%2
